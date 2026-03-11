@@ -8,7 +8,7 @@ public class UserController {
 
     @GetMapping("/user/{id}")
     public String getUser(@PathVariable int id) {
-        return "User ID is: " + id;
+        return "User ID: " + id;
     }
 
     @GetMapping("/search")
