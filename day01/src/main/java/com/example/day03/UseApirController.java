@@ -4,7 +4,7 @@ package com.example.day03;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class UserController {
+public class UseApirController {
 
     @GetMapping("/user/{id}")
     public String getUser(@PathVariable int id) {
