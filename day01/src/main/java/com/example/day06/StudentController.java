@@ -22,4 +22,8 @@ public class StudentController {
     public List<Student> getStudents(){
         return studentService.getStudents();
     }
+    @GetMapping("/search")
+    public List<Student> searchStudents(@RequestParam String name){
+        return studentService.getStudentsByName(name);
+    }
 }
